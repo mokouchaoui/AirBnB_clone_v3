@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-"""starts a Flask web application that listens on 0.0.0.0, port 5000"""
-
+"""Starts a Flask web application.
+The application listens on 0.0.0.0, port 5000.
+Routes:
+    /hbnb: HBnB home page.
+"""
 from models import storage
 from flask import Flask
 from flask import render_template

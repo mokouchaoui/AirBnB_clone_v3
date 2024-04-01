@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-""" Function that compress a folder """
+"""
+Fabric script based on the file 1-pack_web_static.py that distributes an
+archive to the web servers
+"""
 
 from fabric.api import put, run, env
 from os.path import exists
-env.hosts = ['54.234.100.234', '54.172.249.200']
+env.hosts = ['142.44.167.228', '144.217.246.195']
 
 
 def do_deploy(archive_path):
